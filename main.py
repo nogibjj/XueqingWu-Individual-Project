@@ -5,7 +5,7 @@ Main cli or app entry point
 # from mylib.calculator import add
 # import click
 
-import polars as pl
+import pandas as pd
 import matplotlib.pyplot as plt
 """"Import packages"""
 
@@ -13,7 +13,7 @@ import matplotlib.pyplot as plt
 
 def read_file(file_name):
     # create the data summary
-    df = pl.read_csv(file_name, ignore_errors=True)
+    df = pd.read_csv(file_name)
     # print(df.head())
     return df
 
