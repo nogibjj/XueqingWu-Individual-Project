@@ -23,4 +23,7 @@ The dataset 'imdb_top_1000.csv' is downloaded from Kaggle https://www.kaggle.com
 <img width="961" alt="Test Result" src="https://github.com/nogibjj/Week3Polar/assets/47194238/101b5590-59ac-4dbb-8428-89d1734e9f3f">
 
 ## Status Badge
+### Continuous Integration (CI badge)
 [![CI](https://github.com/nogibjj/Week3Polar/actions/workflows/cicd.yml/badge.svg)](https://github.com/nogibjj/Week3Polar/actions/workflows/cicd.yml)
+
+### Ruff Badge
