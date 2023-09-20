@@ -5,9 +5,9 @@ Main cli or app entry point
 # from mylib.calculator import add
 # import click
 
-import pandas as pd
+#import pandas as pd
 import matplotlib.pyplot as plt
-from mylib.lib import (read_file, Rating_plot, MetaScore_plot)
+from mylib.lib import (read_file,  Rating_plot, MetaScore_plot)
 """"Import packages"""
 
 #var=1;var=2
