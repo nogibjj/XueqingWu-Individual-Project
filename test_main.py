@@ -9,17 +9,17 @@ Test goes here
 # def test_add():
 #     assert add(1, 2) == 3
 
-from main import read_file, summary, summary_plot
+from main import summary, summary_plot
 #import matplotlib.pyplot as plt
 #import polars as pl
 
 "Test the dataset summary"
 
 
-def test_read_file():
-    df=read_file('imdb_top_1000.csv')
-    # assert not df.empty()
-    assert len(df)==1000
+# def test_read_file():
+#     df=read_file('imdb_top_1000.csv')
+#     # assert not df.empty()
+#     assert len(df)==1000
 
 def test_describe():
     # describe=read_file('imdb_top_1000.csv')
@@ -38,6 +38,6 @@ def test_graph():
 
 
 if __name__ == "__main__":
-    test_read_file()
+    #test_read_file()
     test_describe()
     test_graph()

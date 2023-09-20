@@ -7,23 +7,30 @@ Main cli or app entry point
 
 import pandas as pd
 import matplotlib.pyplot as plt
-from mylib.lib import (read_file, Rating_plot, MetaScore_plot)
 """"Import packages"""
 
 #var=1;var=2
 
+def read_file(file_name):
+    # create the data summary
+    df = pd.read_csv(file_name)
+    # print(df.head())
+    return df
 
-def summary(file_name):
+# def summary(file_name):
+#     df=read_file(file_name)
+#     print(df.describe())
+#     return df.describe()
+
+def Rating_plot(file_name):
     df=read_file(file_name)
-    print(df.describe())
-    return df.describe()
+    plt.hist(df['IMDB_Rating'])
+    plt.show()
 
-def summary_plot(file_name):
-    plt.subplot(2, 1, 1)
-    Rating_plot(file_name)
-
-    plt.subplot(2, 1, 2)
-    MetaScore_plot(file_name)
+def MetaScore_plot(file_name):
+    df=read_file(file_name)
+    plt.hist(df['Meta_score'])
+    plt.show() 
 
 # @click.command("add")
 # @click.argument("a", type=int)

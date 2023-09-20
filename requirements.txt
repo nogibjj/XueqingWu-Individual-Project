@@ -16,6 +16,7 @@ polars
 matplotlib==3.7.2
 Pandas
 nbval
+Jupyter Notebook
 
 
 
