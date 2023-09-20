@@ -32,6 +32,17 @@ def MetaScore_plot(file_name):
     plt.hist(df['Meta_score'])
     plt.show() 
 
+
+def Rating_plot_save(file_name):
+    df=read_file(file_name)
+    plt.hist(df['IMDB_Rating'])
+    plt.savefig('Rating_plot.png') 
+
+def MetaScore_plot_save(file_name):
+    df=read_file(file_name)
+    plt.hist(df['Meta_score'])
+    plt.savefig('MetaScore_plot.png') 
+
 # @click.command("add")
 # @click.argument("a", type=int)
 # @click.argument("b", type=int)
