@@ -7,7 +7,11 @@ Main cli or app entry point
 
 #import pandas as pd
 import matplotlib.pyplot as plt
-from mylib.lib import (read_file,  Rating_plot, MetaScore_plot, Rating_plot_save, MetaScore_plot_save)
+from mylib.lib import (read_file,  
+                       Rating_plot, 
+                       MetaScore_plot,
+                       Rating_plot_save,
+                       MetaScore_plot_save)
 """"Import packages"""
 
 #var=1;var=2
