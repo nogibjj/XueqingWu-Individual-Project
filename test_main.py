@@ -26,8 +26,8 @@ def test_describe():
     # assert describe['IMDB_Rating'].mean()==7.949299999999999
     # assert describe['IMDB_Rating'].max()==9.3
     describe=summary('imdb_top_1000.csv')
-    assert describe[["describe", "IMDB_Rating"]][2, 1]==7.949299999999999
-    assert describe[["describe", "IMDB_Rating"]][8, 1]==9.3
+    assert describe.loc["mean", "IMDB_Rating"]==7.949299999999999
+    assert describe.loc["max", "IMDB_Rating"]==9.3
 
 def test_graph():
     # df=read_file('imdb_top_1000.csv')
