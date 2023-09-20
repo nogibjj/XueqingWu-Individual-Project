@@ -29,7 +29,6 @@ def summary_plot(file_name):
 
 def save_to_markdown(file_name):
     """save summary report to markdown"""
-    general_df = read_file(file_name)
     describe_df = summary(file_name)
     markdown_table1 = describe_df.to_markdown()
     Rating_plot_save(file_name)
