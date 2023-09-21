@@ -1,7 +1,8 @@
 ## Purpose
 The goal of this project is to a do a data analysis project with continuous integration on GitHub.
 
-## Video
+## Demo Video
+https://youtu.be/ZFgKT2W-3mI
 
 ## Items Included
 1. `lib.py`, `test_lib.py`
