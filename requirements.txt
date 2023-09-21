@@ -14,9 +14,9 @@ uvicorn==0.18.3
 #python
 polars
 matplotlib==3.7.2
-tabulate
-Pandas
-nbval
+tabulate==0.9.0
+Pandas==2.0.3 
+nbval==0.10.0  
 
 
 

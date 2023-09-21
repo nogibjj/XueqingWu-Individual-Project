@@ -17,10 +17,10 @@ def read_file(file_name):
     # print(df.head())
     return df
 
-# def summary(file_name):
-#     df=read_file(file_name)
-#     print(df.describe())
-#     return df.describe()
+def summary(file_name):
+    df=read_file(file_name)
+    # print(df.describe())
+    return df.describe()
 
 def Rating_plot(file_name):
     df=read_file(file_name)

@@ -5,22 +5,26 @@ Main cli or app entry point
 # from mylib.calculator import add
 # import click
 
-#import pandas as pd
+# import pandas as pd
 import matplotlib.pyplot as plt
-from mylib.lib import (read_file,  
-                       Rating_plot, 
-                       MetaScore_plot,
-                       Rating_plot_save,
-                       MetaScore_plot_save)
+from mylib.lib import (
+    read_file,
+    Rating_plot,
+    MetaScore_plot,
+    Rating_plot_save,
+    MetaScore_plot_save,
+)
+
 """"Import packages"""
 
-#var=1;var=2
+# var=1;var=2
 
 
 def summary(file_name):
-    df=read_file(file_name)
+    df = read_file(file_name)
     print(df.describe())
     return df.describe()
+
 
 def summary_plot(file_name):
     plt.subplot(2, 1, 1)
@@ -28,7 +32,6 @@ def summary_plot(file_name):
 
     plt.subplot(2, 1, 2)
     MetaScore_plot(file_name)
-
 
 
 def save_to_markdown(file_name):
@@ -55,5 +58,4 @@ def save_to_markdown(file_name):
 
 
 if __name__ == "__main__":
-    save_to_markdown('imdb_top_1000.csv')
-
+    save_to_markdown("imdb_top_1000.csv")
